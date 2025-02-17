@@ -5,11 +5,11 @@
     align-items: center;
     justify-content: space-between;
     border: 1px solid;
-    border-color: white;
+    border-color: var(--color);
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    background-color: #1f1f1f;
+    background-color: var(--header-color);
 }
 
 .start {
@@ -55,4 +55,5 @@
 
 h2, h3 {
     margin: 0;
+    color: var(--color)
 }

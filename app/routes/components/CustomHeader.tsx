@@ -1,5 +1,7 @@
 import styles from "./CustomHeader.module.css"
 import { Link } from "react-router"
+import Hamburger from "./Hamburger"
+import DarkThemeToggle from "./DarkThemeToggle"
 
 export function CustomHeader() {
     return (
@@ -7,16 +9,19 @@ export function CustomHeader() {
             <div className={styles.container}>
                 <div className={styles.start}>
                     <button className={styles.iconButton}>
-                        <img src="svg/guide.svg" alt="hamburger-menu" />
+                        <Hamburger fillColor="var(--color)" />
                     </button>
                     <div className={styles.headerLogo}>
-                        <Link to={"//"}>
+                        <Link to={""}>
                             <div className={styles.logo}>
-                                <img src="svg/academic.svg" alt="logo" className={styles.logoIcon} />
+                                <img src="pictures/logo.png" alt="logo" className={styles.logoIcon} />
                                 <h2>Projektarbete</h2>
                             </div>
                         </Link>
                     </div>
+                </div>
+                <div className={styles.toggle}>
+                    <DarkThemeToggle />
                 </div>
             </div>
         </header>

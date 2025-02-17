@@ -1,10 +1,17 @@
-html,
-body {
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+:root {
+  --color: #000;
+  --header-color: #dbd9d9;
+  --background-image: linear-gradient(to right, #fbfbfb, #3b3939);
+}
+
+.dark-theme {
+  --color: #fff;
+  --header-color: #1f1f1f;
+  --background-image: linear-gradient(to right, #3b3939, #1f1f1f);
 }
 
 body {
   margin: 0;
+  background-image: var(--background-image);
+  color: var(--color);
 }

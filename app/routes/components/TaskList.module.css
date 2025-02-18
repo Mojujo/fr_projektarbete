@@ -1,0 +1,67 @@
+.taskCheckmark {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 4px 0 6px;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.taskCompleted {
+    color: green;
+}
+
+.taskTitle {
+    display: flex;
+    padding-top: 20px;
+    margin: 0 0 5px 0;
+    justify-content: center;
+    align-self: center;
+}
+
+.taskInput {
+    display: flex;
+    justify-content: center;
+}
+
+.taskContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.taskList {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    height: 40px;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+}
+
+.taskMain {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+    padding-right: 6px;
+}
+
+.taskButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 38px;
+    cursor: pointer;
+    border: none;
+}   

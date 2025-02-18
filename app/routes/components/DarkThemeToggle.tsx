@@ -1,8 +1,11 @@
+import styles from "./CustomHeader.module.css"
 import { useEffect, useState } from "react";
-import Cog from "./Cog"
 
 const DarkThemeToggle = () => {
     const [isDarkTheme, setDarkTheme] = useState<boolean>(false);
+
+    const sun = <img src="svg/sun.svg" alt="Light Theme" />
+    const moon = <img src="svg/moon.svg" alt="Dark Theme" />
 
     useEffect(() => {
         let theme = localStorage.getItem("Theme");
@@ -18,13 +21,12 @@ const DarkThemeToggle = () => {
 
     const toggleTheme = () => {
         setDarkTheme(!isDarkTheme);
+
     };
 
     return (
-        <label>
-            <input type="checkbox" readOnly checked={isDarkTheme} onClick={toggleTheme} />
-            <span>Dark Mode</span>
-            <Cog fillColor="var(--color)" />
+        <label className={styles.toggleLabel} onClick={toggleTheme}>
+            {isDarkTheme ? sun : moon}
         </label>
     );
 };

@@ -57,3 +57,13 @@ h2, h3 {
     margin: 0;
     color: var(--color)
 }
+
+.toggle {
+    padding-right: 16px;
+}
+
+.toggleLabel {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}

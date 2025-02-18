@@ -15,3 +15,8 @@ body {
   background-image: var(--background-image);
   color: var(--color);
 }
+
+a:link,
+a:visited {
+  text-decoration: none;
+}

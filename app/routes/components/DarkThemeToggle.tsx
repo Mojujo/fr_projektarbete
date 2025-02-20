@@ -19,7 +19,7 @@ const DarkThemeToggle = () => {
         document.body.classList.toggle("dark-theme", isDarkTheme)
     }, [isDarkTheme])
 
-    const toggleTheme = () => {
+    const toggleTheme = (): void => {
         setDarkTheme(!isDarkTheme);
 
     };

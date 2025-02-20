@@ -7,7 +7,7 @@ export default function TaskList() {
     const [tasks, setTasks] = useState<Task[]>([]);
     const [task, setTask] = useState<string>("");
 
-    const addTask = () => {
+    const addTask = (): void => {
         if (task.trim() === "") return;
         setTasks([...tasks, { text: task, completed: false }]);
         setTask("");

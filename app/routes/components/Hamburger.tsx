@@ -1,4 +1,6 @@
-export default function Hamburger({fillColor} : {fillColor:string}) {
+import type { JSX } from "react";
+
+export default function Hamburger({ fillColor }: { fillColor: string }): JSX.Element {
     return (
         <svg xmlns="http://www.w3.org/2000/svg"
             className=""

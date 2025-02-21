@@ -20,3 +20,19 @@ a:link,
 a:visited {
   text-decoration: none;
 }
+
+.chill-guy {
+  display: flex;
+  flex-direction: column;
+}
+
+.chill-picture {
+  align-self: center;
+  width: 80%;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.chill-text {
+  align-self: center;
+}

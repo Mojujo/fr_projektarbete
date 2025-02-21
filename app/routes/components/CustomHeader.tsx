@@ -12,14 +12,23 @@ export function CustomHeader() {
                         <Hamburger fillColor="var(--color)" />
                     </button>
                     <div className={styles.headerLogo}>
-                        <Link to={""}>
+                        <Link to={"/"}>
                             <div className={styles.logo}>
                                 <img src="pictures/logo.png" alt="logo" className={styles.logoIcon} />
-                                <h2>Projektarbete</h2>
+                                <h2>Homepage</h2>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className={styles.navBar}>
+                        <Link to={"/about"}>
+                            <div className={styles.logo}>
+                                <img src="pictures/chillguy.png" alt="just a chill guy" className={styles.logoIcon} />
+                                <h2>About me</h2>
                             </div>
                         </Link>
                     </div>
                 </div>
+
                 <div className={styles.toggle}>
                     <DarkThemeToggle />
                 </div>
